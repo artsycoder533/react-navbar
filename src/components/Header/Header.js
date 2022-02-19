@@ -1,22 +1,20 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import Hamburger from "../Hamburger/Hamburger";
-import { Container, LogoIcon, LogoHolder } from "./style";
+import { Container, LogoIcon, LogoHolder, ContainerCenter } from "./style";
 
 function Header() {
   const [open, setOpen] = useState(false);
-    const linksContainer = useRef(null);
-    
-    useEffect(() => {
-    
-    }, [open]);
+
   return (
     <Container>
-      <LogoHolder>
-        <LogoIcon />
-        <Hamburger open={open} setOpen={setOpen} />
-      </LogoHolder>
-          <Navbar ref={linksContainer} open={open} />
+      <ContainerCenter>
+        <LogoHolder>
+          <LogoIcon />
+          <Hamburger open={open} setOpen={setOpen} />
+        </LogoHolder>
+        <Navbar open={open} />
+      </ContainerCenter>
     </Container>
   );
 }

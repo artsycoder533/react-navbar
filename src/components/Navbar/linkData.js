@@ -6,15 +6,15 @@ export const links = [
     text: "Home",
   },
   {
-    url: "/",
+    url: "/about",
     text: "About",
   },
   {
-    url: "/",
+    url: "/services",
     text: "Services",
   },
   {
-    url: "/",
+    url: "/contact",
     text: "Contact",
   },
 ];

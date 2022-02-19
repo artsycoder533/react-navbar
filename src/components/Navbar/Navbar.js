@@ -1,12 +1,13 @@
-import React, { useState } from "react";
-import { NavLinks, NavLink } from "./style";
+import React from "react";
+import { NavLinks, NavLink, Container } from "./style";
 import { links } from "./linkData";
 
 
-function Navbar({open}) {
-  
+function Navbar({ open }) {
+
   return (
-    <NavLinks open={open}>
+    <Container open={open} >
+      <NavLinks open={open}>
         {links.map((link) => {
           const { url, text } = link;
           return (
@@ -16,6 +17,7 @@ function Navbar({open}) {
           );
         })}
       </NavLinks>
+    </Container>
   );
 }
 
