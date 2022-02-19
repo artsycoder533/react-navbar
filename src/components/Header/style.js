@@ -25,6 +25,10 @@ export const ContainerCenter = styled.div`
   width: 90vw;
   margin: 0 auto;
   flex-direction: column;
+
+  @media screen and (min-width: 992px){
+    flex-direction: row;
+  }
 `;
 
 export const LogoHolder = styled.div`
