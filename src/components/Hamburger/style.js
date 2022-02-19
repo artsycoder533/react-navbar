@@ -39,7 +39,6 @@ export const TopLine = styled(Line)`
 
 export const MiddleLine = styled(Line)`
   opacity: ${({ open }) => (open ? "0" : "1")};
-  background-color: red;
 `;
 
 export const BottomLine = styled(Line)`
